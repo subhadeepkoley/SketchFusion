@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <style>
-         td, th {
+
+<head>
+   <style>
+      td,
+      th {
          border: 0px solid black;
-         }
-         img{
+      }
+
+      img {
          padding: 5px;
-         }
-      </style>
-      <title>SketchFusion: Learning Universal Sketch Features through Fusing Foundation Models</title>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+      }
+   </style>
+   <title>SketchFusion: Learning Universal Sketch Features through Fusing Foundation Models</title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <!--  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
          <script>
            window.dataLayer = window.dataLayer || [];
          
@@ -26,27 +29,25 @@
          
          
          </script> -->
-      <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-         rel="stylesheet">
-      <link rel="stylesheet" href="./static/css/bulma.min.css">
-      <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-      <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-      <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-      <link rel="stylesheet"
-         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-      <link rel="stylesheet" href="./static/css/index.css">
-      <link rel="icon" href="./static/images/favicon.svg">
-      <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
-      <link rel="stylesheet" href="css/app.css">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script defer src="./static/js/fontawesome.all.min.js"></script>
-      <script src="./static/js/bulma-carousel.min.js"></script>
-      <script src="./static/js/bulma-slider.min.js"></script>
-      <script src="./static/js/index.js"></script>
-   </head>
-   <!-- <body>
+   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+   <link rel="stylesheet" href="./static/css/bulma.min.css">
+   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+   <link rel="stylesheet" href="./static/css/index.css">
+   <link rel="icon" href="./static/images/favicon.svg">
+   <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
+   <link rel="stylesheet" href="css/app.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script defer src="./static/js/fontawesome.all.min.js"></script>
+   <script src="./static/js/bulma-carousel.min.js"></script>
+   <script src="./static/js/bulma-slider.min.js"></script>
+   <script src="./static/js/index.js"></script>
+</head>
+<!-- <body>
       <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -86,109 +87,117 @@
       
         </div>
       </nav> -->
-   <section class="hero">
-      <div class="hero-body">
-         <div class="container is-max-desktop">
-            <div class="columns is-centered">
-               <div class="column has-text-centered">
-                  <h1 class="title is-1 publication-title", style="color:purple;">SketchFusion: Learning Universal Sketch  </h1>
-                  <h1 class="title is-4 publication-title">Features through Fusing Foundation Models</h1>
-                  <div class="is-size-5 publication-authors">
-                     <span class="author-block">
-                        <a href="https://subhadeepkoley.github.io/">Subhadeep Koley</a><sup>1,2</sup>,</span>
-                        <span class="author-block">
-                           <a href="https://tapaskumardutta1.github.io/">Tapas Kumar Dutta</a>,</span>
-                           <span class="author-block">
-                        <a href="https://aneeshan95.github.io/">Aneeshan Sain</a><sup>1</sup>,</span>
-                        <span class="author-block">
+<section class="hero">
+   <div class="hero-body">
+      <div class="container is-max-desktop">
+         <div class="columns is-centered">
+            <div class="column has-text-centered">
+               <h1 class="title is-1 publication-title" , style="color:purple;">SketchFusion:
+               </h1>
+               <h1 class="title is-4 publication-title"> Learning Universal Sketch Features through Fusing Foundation Models</h1>
+               <div class="is-size-5 publication-authors">
+                  <span class="author-block">
+                     <a href="https://subhadeepkoley.github.io/">Subhadeep Koley</a><sup>1,2</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://tapaskumardutta1.github.io/">Tapas Kumar Dutta</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                     <a href="https://aneeshan95.github.io/">Aneeshan Sain</a><sup>1</sup>,</span>
+                  <span class="author-block">
                      <a href="http://www.pinakinathc.me/">Pinaki Nath Chowdhury</a><sup>1</sup>,</span>
-                     <span class="author-block">
+                  <span class="author-block">
                      <a href="https://ayankumarbhunia.github.io/">Ayan Kumar Bhunia</a><sup>1</sup>,</span>
-                     <span class="author-block">
-                     <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">Yi-Zhe Song</a><sup>1,2</sup></span>	  
-                     </span>
-                  </div>
-                  <div class="is-size-5 publication-authors">
-                     <span class="author-block"><sup>1</sup>SketchX, CVSSP, University of Surrey, United Kingdom</span>
-                     <span class="author-block"><sup>2</sup>iFlyTek-Surrey Joint Research Centre on Artifiial Intelligence</span>
-                  </div>
-                  <!--     <div class="column has-text-centered">
+                  <span class="author-block">
+                     <a href="http://personal.ee.surrey.ac.uk/Personal/Y.Song/">Yi-Zhe Song</a><sup>1,2</sup></span>
+                  </span>
+               </div>
+               <div class="is-size-5 publication-authors">
+                  <span class="author-block"><sup>1</sup>SketchX, CVSSP, University of Surrey, United Kingdom</span>
+                  <span class="author-block"><sup>2</sup>iFlyTek-Surrey Joint Research Centre on Artifiial
+                     Intelligence</span>
+               </div>
+               <!--     <div class="column has-text-centered">
                      <a href="as">ICLR 2023</a>
                      </span>
                      </div> -->
-                  <div class="column has-text-centered">
-                     <div class="publication-links">
-                        <!-- PDF Link. -->
-                        <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2303.13440.pdf"
+               <div class="column has-text-centered">
+                  <div class="publication-links">
+                     <!-- PDF Link. -->
+                     <span class="link-block">
+                        <a href=""
                            class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
+                           <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                           </span>
+                           <span>Paper</span>
                         </a>
-                        </span>
-                        <span class="link-block">
-                        <a href="https://arxiv.org/abs/2303.13440"
+                     </span>
+                     <span class="link-block">
+                        <a href=""
                            class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                        </span>
-                        <span>arXiv</span>
+                           <span class="icon">
+                              <i class="ai ai-arxiv"></i>
+                           </span>
+                           <span>arXiv</span>
                         </a>
-                        </span>
-                        <!-- Video Link. -->
-                        <span class="link-block">
-                        <a href="https://www.youtube.com/watch?v=ImcQFsS1SfE"
+                     </span>
+                     <!-- Video Link. -->
+                     <span class="link-block">
+                        <a href=""
                            class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                        <i class="fab fa-youtube"></i>
-                        </span>
-                        <span>Video</span>
+                           <span class="icon">
+                              <i class="fab fa-youtube"></i>
+                           </span>
+                           <span>Video</span>
                         </a>
-                        </span>
-                        <!-- Code Link. -->
-                        <span class="link-block">
-                        <a href="https://github.com/aneeshan95/Sketch_LVM"
+                     </span>
+                     <!-- Code Link. -->
+                     <span class="link-block">
+                        <a href=""
                            class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                        <i class="fab fa-github"></i>
-                        </span>
-                        <span>Code</span>
+                           <span class="icon">
+                              <i class="fab fa-github"></i>
+                           </span>
+                           <span>Code</span>
                         </a>
-                        </span>
-                        <!-- Dataset Link. -->
-                        <!-- <span class="link-block">
-                           <a href=""
-                              class="external-link button is-normal is-rounded is-dark">
-                             <span class="icon">
-                                 <i class="far fa-images"></i>
-                             </span>
-                             <span>Data</span>
-                           </a> -->
-                     </div>
+                     </span>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </section>
-   <section class="hero teaser">
-      <div class="container is-max-desktop">
-         <div class="hero-body">
-            <img class="round" style="width:1500px" src="./static/images/opener.png"/>
-            <h2 class="subtitle has-text-centered">
-               <span class="dnerf"></span>Apart from high-resolution image generation, text-to-image diffusion models (\eg, Stable diffusion (SD) ) with their innate object understanding capability, have shown remarkable performance across a wide range of image-based vision tasks (\eg, segmentation, depth estimation, etc.). However, upon analysing the PCA representation of SD's intermediate UNet features, we observe that it struggles to achieve similar results when working with freehand abstract sketches. Unlike pixel-perfect photos, highly abstract freehand sketches are sparse and lack detailed textures and colours, making it harder for the SD model to extract meaningful features. Furthermore, investigating the SD denoising process in the frequency domain (via Fourier Transform), we observe the predominance of high-frequency (HF) components, rather than their low-frequency (LF) counterpart -- crucial for capturing comprehensive semantic context. To mitigate this inherent bias within SD, we reinforce the diffusion process with another pretrained model (\ie, CLIP ) whose bias is complementary (\ie, focuses on LF) to SD. Consequently, the proposed extractor can extract semantically meaningful and accurate features from both sketches and photos, that encapsulate a broader frequency spectrum (\ie, HF and LF). Right:} Testing the proposed method with different sketch-based discriminative and dense prediction tasks (requiring knowledge of both sketch and image), we find a marked improvement over baseline SD+CLIP hybrid feature extractor.</h2>
-         </div>
+   </div>
+</section>
+<section class="hero teaser">
+   <div class="container is-max-desktop">
+      <div class="hero-body">
+         <img class="round" style="width:1500px" src="./static/images/opener.png" />
+         <h2 class="subtitle has-text-centered">
+            <span class="dnerf"></span>Apart from high-resolution image generation, text-to-image diffusion models (\eg,
+            Stable diffusion (SD) ) with their innate object understanding capability, have shown remarkable performance
+            across a wide range of image-based vision tasks (\eg, segmentation, depth estimation, etc.). However, upon
+            analysing the PCA representation of SD's intermediate UNet features, we observe that it struggles to achieve
+            similar results when working with freehand abstract sketches. Unlike pixel-perfect photos, highly abstract
+            freehand sketches are sparse and lack detailed textures and colours, making it harder for the SD model to
+            extract meaningful features. Furthermore, investigating the SD denoising process in the frequency domain
+            (via Fourier Transform), we observe the predominance of high-frequency (HF) components, rather than their
+            low-frequency (LF) counterpart -- crucial for capturing comprehensive semantic context. To mitigate this
+            inherent bias within SD, we reinforce the diffusion process with another pretrained model (\ie, CLIP ) whose
+            bias is complementary (\ie, focuses on LF) to SD. Consequently, the proposed extractor can extract
+            semantically meaningful and accurate features from both sketches and photos, that encapsulate a broader
+            frequency spectrum (\ie, HF and LF). Right:} Testing the proposed method with different sketch-based
+            discriminative and dense prediction tasks (requiring knowledge of both sketch and image), we find a marked
+            improvement over baseline SD+CLIP hybrid feature extractor.
+         </h2>
       </div>
-   </section>
-   <!-- <table border="1" id="cssTable">
+   </div>
+</section>
+<!-- <table border="1" id="cssTable">
       <tr>
           <td>Text</td>
           <td>Text</td>
       </tr>
       </table> -->
-   <!-- 
+<!-- 
       <section class="hero is-light is-small">
         <div class="hero-body">
           <div class="container">
@@ -246,21 +255,31 @@
         </div>
       </section>
        -->
-   <section class="section">
+<section class="section">
    <div class="container is-max-desktop">
-   <!-- Abstract. -->
-   <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-         <h2 class="title is-3">Abstract</h2>
-         <div class="content has-text-justified">
-            While foundation models have revolutionised computer vision, their effectiveness for sketch understanding remains limited by the unique challenges of abstract, sparse visual inputs. Through systematic analysis, we uncover two fundamental limitations: Stable Diffusion (SD) struggles to extract meaningful features from abstract sketches (unlike its success with photos), and exhibits a pronounced frequency-domain bias that suppresses essential low-frequency components needed for sketch understanding. Rather than costly retraining, we address these limitations by strategically combining SD with CLIP, whose strong semantic understanding naturally compensates for SD's spatial-frequency biases. By dynamically injecting CLIP features into SD's denoising process and adaptively aggregating features across semantic levels, our method achieves state-of-the-art performance in sketch retrieval (+3.35%), recognition (+1.06%), segmentation (+29.42%), and correspondence learning (+21.22%), demonstrating the first truly universal sketch feature representation in the era of foundation models.
-            </p>
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+         <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+               While foundation models have revolutionised computer vision, their effectiveness for sketch understanding
+               remains limited by the unique challenges of abstract, sparse visual inputs. Through systematic analysis,
+               we uncover two fundamental limitations: Stable Diffusion (SD) struggles to extract meaningful features
+               from abstract sketches (unlike its success with photos), and exhibits a pronounced frequency-domain bias
+               that suppresses essential low-frequency components needed for sketch understanding. Rather than costly
+               retraining, we address these limitations by strategically combining SD with CLIP, whose strong semantic
+               understanding naturally compensates for SD's spatial-frequency biases. By dynamically injecting CLIP
+               features into SD's denoising process and adaptively aggregating features across semantic levels, our
+               method achieves state-of-the-art performance in sketch retrieval (+3.35%), recognition (+1.06%),
+               segmentation (+29.42%), and correspondence learning (+21.22%), demonstrating the first truly universal
+               sketch feature representation in the era of foundation models.
+               </p>
+            </div>
          </div>
       </div>
-   </div>
-   <!--/ Abstract. -->
-   <!-- Paper video. -->
-   <!-- <section class="section">
+      <!--/ Abstract. -->
+      <!-- Paper video. -->
+      <!-- <section class="section">
       <div class="container is-max-desktop">
       -- Abstract. --
       <div class="columns is-centered has-text-centered">
@@ -279,123 +298,116 @@
          </div>
       </div>
    </section> -->
-   
-   
-   <section class="section">
-      <div class="container is-max-desktop">
-      <div class="columns is-centered has-text-centered">
-         <div class="column is-four-fifths">
-            <h2 class="title is-3">Architecture</h2>
-            <div class="content has-text-justified">
-               </h2>
-               <center>
-                  <img src="./static/images/arch.png" alt="" border=0 height=300 width=650></img></
-               </center>
-               <h5 class="subtitle has-text-centered">
-                  Given the frozen SD and CLIP models, the proposed method learns the aggregation network, 1D convolutional layers, and branch-weights with sketch-photo pairs, via different losses for different downstream tasks.
-			      </h5
-               &nbsp; 
-            </div>
-         </div>
-      </div>
-   </section>
 
-   <section class="hero">
-   <div class="hero-body">
-   <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-         <div class="column is-four-fifths">
-            <h2 class="title is-3">Results</h2>
-            <div class="content has-text-justified">
-               <center>
-                  <img src="static/images/point_correspondence.png" alt="qualitative results" border=0 height=200 width=1500/>
-               </center>
-               <h5 class="subtitle has-text-centered">
-                  Sketch-photo correspondence results on PSC6K. Green circles and squares depict source and GT points respectively, while red squares denote predicted points.
-			   <br>
-			   <br>			
-               <center>
-                  <img src="static/images/seg.png" alt="qualitative results" border=0 height=200 width=600/>
-               </center>
-               <h5 class="subtitle has-text-justified">
-                  Qualitative results for sketch-based image segmentation. Given a query sketch, our method generates separate segmentation masks for all images of that category.
-            <br>
-	    <br>
-		<center>
-                  <img src="static/images/ZS-SBIR.png" alt="quantitative results" border=0 height=200 width=1500/>
-               </center>
-               <br>
-               <br>
-              <center>
-               <img src="static/images/ZS-FG-SBIR.png" alt="quantitative results" border=0 height=200 width=1500/>
-            </center>
-               <h5 class="subtitle has-text-justified">
-                  Quantitave comparison of our method against existing frameworks and baselines on ZS-SBIR and cross-category FG-ZS-SBIR.
-            <br>
-			   <!-- <br>
-               <center>
-                  <img src="static/images/noisy.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
-               </center>
-               <h5 class="subtitle has-text-centered">
-               Effect of noisy stroke addition (left) and generation from partial sketches (right).		
-			   <br>
-			   <br>
-			   <center>
-                  <img src="static/images/unseen.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
-               </center>
-               <h5 class="subtitle has-text-centered">
-               Generalisation across sketch styles.	
-			   <br>
-			   <br>
-			   <center>
-                  <img src="static/images/multiModal.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
-               </center>
-               <h5 class="subtitle has-text-centered">
-               Multi-modal generation showing varied colour and, appearance features. Reference photo shown in inset.		
-			   <br>
-			   <br>
-			   <center>
-                  <img src="static/images/suppl.gif" alt="this slowpoke moves" border=0 height=400 width=800/>
-               </center>
-               <h5 class="subtitle has-text-centered">
-			   Qualitative results on ShoeV2, ChairV2, and Handbag datasets.				    -->
+
+      <section class="section">
+         <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+               <div class="column is-four-fifths">
+                  <h2 class="title is-3">Architecture</h2>
+                  <div class="content has-text-justified">
+                     </h2>
+                     <center>
+                        <img src="./static/images/arch.png" alt="" border=0 height=300 width=650></img></ </center>
+                        <h5 class="subtitle has-text-centered">
+                           Given the frozen SD and CLIP models, the proposed method learns the aggregation network, 1D
+                           convolutional layers, and branch-weights with sketch-photo pairs, via different losses for
+                           different downstream tasks.
+                        </h5 &nbsp; </div>
+                  </div>
+               </div>
+      </section>
+
+      <section class="hero">
+         <div class="hero-body">
+            <div class="container is-max-desktop">
+               <!-- Abstract. -->
+               <div class="columns is-centered has-text-centered">
+                  <div class="column is-four-fifths">
+                     <h2 class="title is-3">Results</h2>
+                     <div class="content has-text-justified">
+                        <center>
+                           <img src="static/images/point_correspondence.png" alt="qualitative results" border=0
+                              height=200 width=1500 />
+                        </center>
+                        <h5 class="subtitle has-text-centered">
+                           Sketch-photo correspondence results on PSC6K. Green circles and squares depict source and GT
+                           points respectively, while red squares denote predicted points.
+                           <br>
+                           <br>
+                           <center>
+                              <img src="static/images/seg.png" alt="qualitative results" border=0 height=200
+                                 width=600 />
+                           </center>
+                           <h5 class="subtitle has-text-justified">
+                              Qualitative results for sketch-based image segmentation. Given a query sketch, our method
+                              generates separate segmentation masks for all images of that category.
+                              <br>
+                              <br>
+                              <center>
+                                 <img src="static/images/ZS-SBIR.png" alt="quantitative results" border=0 height=200
+                                    width=1500 />
+                              </center>
+                              <br>
+                              <br>
+                              <center>
+                                 <img src="static/images/recognition.png" alt="quantitative results" border=0 height=200
+                                    width=1500 />
+                              </center>
+                              <br>
+                              <br>
+                              <center>
+                                 <img src="static/images/corr.png" alt="quantitative results" border=0 height=200
+                                    width=1500 />
+                              </center>
+                              <br>
+                              <br>
+                              <center>
+                                 <img src="static/images/segmentation.png" alt="quantitative results" border=0 height=200
+                                    width=1500 />
+                              </center>
+                              <br>
+                              <br>
+
+                     </div>
+                  </div>
+               </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-         <h2 class="title">BibTeX</h2>
-         <pre><code>@Inproceedings{koley2025sketchfusion,
+            <section class="section" id="BibTeX">
+               <div class="container is-max-desktop content">
+                  <h2 class="title">BibTeX</h2>
+                  <pre><code>@Inproceedings{koley2025sketchfusion,
   title={{SketchFusion: Learning Universal Sketch Features through Fusing Foundation Models}},
   author={Subhadeep Koley and Tapas Kumar Dutta and Aneeshan Sain and Pinaki Nath Chowdhury and Ayan Kumar Bhunia and Yi-Zhe Song},
   booktitle={CVPR},
   year={2025}
 }</code></pre>
-      </div>
-   </section>
-   <script>
-      const viewers = document.querySelectorAll(".image-compare");
-      viewers.forEach((element) => {
-          let view = new ImageCompare(element, {
-              hoverStart: true,
-              addCircle: true
-          }).mount();
-      });
-      
-      $(document).ready(function () {
-          var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
-              lineNumbers: false,
-              lineWrapping: true,
-              readOnly: true
-          });
-          $(function () {
-              $('[data-toggle="tooltip"]').tooltip()
-          })
-      });
-   </script>
-   <br>
-   <p style="text-align:center"> Copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC-SA 4.0</a> © Aneeshan Sain | Last updated: 31 Mar 2023 |Template Credit: <a href="https://nerfies.github.io/"> Nerfies</a></p>
-   </body>
+               </div>
+            </section>
+            <script>
+               const viewers = document.querySelectorAll(".image-compare");
+               viewers.forEach((element) => {
+                  let view = new ImageCompare(element, {
+                     hoverStart: true,
+                     addCircle: true
+                  }).mount();
+               });
+
+               $(document).ready(function () {
+                  var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+                     lineNumbers: false,
+                     lineWrapping: true,
+                     readOnly: true
+                  });
+                  $(function () {
+                     $('[data-toggle="tooltip"]').tooltip()
+                  })
+               });
+            </script>
+            <br>
+            <p style="text-align:center"> Copyright: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC
+               BY-NC-SA 4.0</a> © Subhadeep Koley | Last updated: 14 March 2025 | Good artists <a
+               href="https://nerfies.github.io/"> copy</a>, great artists steal.</a></p>
+         </body>
+
 </html>
